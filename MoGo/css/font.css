@@ -1,0 +1,33 @@
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Roboto/RobotoRegular/RobotoRegular.eot") format("embedded-opentype"),
+				url("../fonts/Roboto/RobotoRegular/RobotoRegular.woff") format("woff"),
+				url("../fonts/Roboto/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+	font-family: "Roboto-Light";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Roboto/RobotoLight/RobotoLight.eot") format("embedded-opentype"),
+				url("../fonts/Roboto/RobotoLight/RobotoLight.woff") format("woff"),
+				url("../fonts/Roboto/RobotoLight/RobotoLight.ttf") format("truetype"); }
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); }
+
+@font-face {
+	font-family: "Montserrat-Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"); }
+
+@font-face {
+	font-family: "Kaushan";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Kaushan-Script/KaushanScript-Regular.ttf") format("truetype"); }

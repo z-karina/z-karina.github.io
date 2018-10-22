@@ -1,0 +1,17 @@
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Roboto/Roboto-Regular.woff") format("woff"); }
+
+@font-face {
+	font-family: "ClearSans";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/ClearSans/ClearSans.woff") format("woff"); }
+
+@font-face {
+	font-family: "ClearSans-Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/ClearSans/ClearSans-Bold.woff") format("woff"); }

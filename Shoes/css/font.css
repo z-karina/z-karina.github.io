@@ -1,0 +1,20 @@
+@font-face {
+ font-family: "Aller";
+ src: url("font/aller/Aller_Std_Rg.woff") format("woff"),
+			url("font/aller/Aller_Std_Rg.ttf") format("ttf"),
+			url("fonts/aller/Aller_Std_Rg.svg") format("svg");
+}
+
+@font-face {
+ font-family: "Aller Bold";
+ src: url("font/aller/Aller_Std_Bd.woff") format("woff"),
+			url("font/aller/Aller_Std_Bd.ttf") format("ttf"),
+			url("fonts/aller/Aller_Std_Bd.svg") format("svg");
+}
+
+@font-face {
+ font-family: "Aller Light";
+ src: url("font/aller/Aller_Std_Lt.woff") format("woff"),
+			url("font/aller/Aller_Std_Lt.ttf") format("ttf"),
+			url("fonts/aller/Aller_Std_Lt.svg") format("svg");
+}

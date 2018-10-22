@@ -1,0 +1,684 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {max-width: 100%;height: auto;}
+
+html {overflow-y: scroll;}
+
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {width: auto; overflow: visible;}
+
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+body {
+	font-family: "Aller", sans-serif;
+	font-size: 14px;
+	color: #242424;
+}
+a {
+	text-decoration: none;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.top-line {
+	background: #242424;
+	height: 45px;
+}
+
+.wrap {
+	max-width: 960px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.logo {
+	padding-top: 10px;
+	display: inline-block;
+}
+
+.nav-auth li {
+	display: inline-block;
+	padding-top: 15px;
+	height: 45px;
+	border-right: 1px solid #383838;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.nav-auth li a {
+	font-family: "Aller";
+	font-size: 0.78em;
+	color: #7e7e7e;
+	padding: 0 25px;
+	vertical-align: middle;
+}
+
+.search .fa {
+	font-size: 1.07em;
+}
+
+.auth span {
+	text-transform: uppercase;
+}
+
+.menu li,
+.user-buttons li {
+	display: inline-block;
+	height: 60px;
+	padding: 20px 25px;
+	border-left: 1px solid #ccc;
+}
+
+.menu li:last-child {
+	border-right: 1px solid #ccc;
+}
+
+.menu li a {
+	color: #242424;
+}
+
+.user-buttons li:last-child {
+	border-right: 1px solid #ccc
+}
+
+.user-buttons span {
+	font-family: "Aller Bold", sans-serif;
+	font-size: 0.85em;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	background-color: #adadad;
+	margin-left: 5px;
+	text-align: center;
+	line-height: 1.7;
+	display: inline-block;
+}
+
+.user-buttons .fa {
+	color: #6e6e6e;
+}
+
+.wishlist:hover span,
+.cart:hover span,
+.cart .active {
+	background-color: #57c5a0;
+	transition: all .2s;
+}
+
+.home {
+	background: #efede7 url(../img/header_bg.jpg) no-repeat;
+	min-height: 460px;
+	background-size: cover;
+}
+
+.item-details {
+	padding-top: 70px;
+	width: 40%;
+}
+
+.price {
+	background-color: #57c5a0;
+	padding: 25px 10px;
+	display: inline-block;
+	color: #fff;
+	font-size: 0.92em;
+	font-family: "Aller Bold", sans-serif;
+}
+
+.home-desc {
+	margin: 20px 0;
+	font-family: "Aller Light",sans-serif;
+}
+
+.home-desc h2 {
+	font-size: 2.85em;
+}
+
+.action-menu a {
+	display: inline-block;
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+	background: url(../img/item_sprite.png) no-repeat;
+	cursor: pointer;
+}
+
+a.sp_eye {
+	background-color: #fff;
+	background-position: 10px 10px;
+}
+
+a.sp_star {
+	background-color: #fff;
+	background-position: -30px 10px;
+}
+
+a.sp_share {
+	background-color: #fff;
+	background-position: -70px 10px;
+}
+
+a.sp_basket {
+	background-color: #fff;
+	background-position: -115px 10px;
+}
+
+.action-menu a:hover {
+	background-image: url(../img/item_sprite-hover.png);
+}
+
+a.sp_eye:hover {
+	background-color: #fff;
+	background-position: 10px 10px;
+}
+
+a.sp_star:hover {
+	background-color: #fff;
+	background-position: -30px 10px;
+}
+
+a.sp_share:hover {
+	background-color: #fff;
+	background-position: -70px 10px;
+}
+
+a.sp_basket:hover {
+	background-color: #fff;
+	background-position: -115px 10px;
+}
+
+.filter-nav {
+	background-color: #2e2e2e;
+	height: 90px;
+}
+
+.filter {
+	position: relative;
+}
+
+.filter:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	background-color: #000;
+	top: 5px;
+	display: block;
+}
+
+.item:hover:after,
+.item.active:after{
+	content: "";
+	position: absolute;
+	height: 6px;
+	width: 100%;
+	background-color: #57c5a0;
+	top: 7px;
+	left: 2px;
+}
+
+.active h3,
+.item h3:hover {
+	color: #fff;
+}
+
+li.item {
+	color: #adadad;
+	display: inline-block;
+	text-align: center;
+	padding: 30px 45px 25px;
+	position: relative;
+}
+
+.item h3 {
+	font-size: 1.28em;
+}
+
+.item p {
+	font-size: 0.85em;
+}
+
+.specials {
+	background-color: #242424;
+	padding: 25px 0;
+}
+
+.on-sale,
+.special-offers,
+.must-have {
+	position: relative;
+	display: inline-block;
+	width: 31.25%;
+	height: 180px;
+	margin: 0 8px;
+}
+
+.on-sale img,
+.special-offers img,
+.must-have img {
+	width: 100%;
+	height: 100%;
+}
+
+.on-sale a,
+.special-offers a,
+.must-have a {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	color: #fff;
+	font-family: "Aller Light", sans-serif;
+	font-size: 1.78em;
+	text-transform: uppercase;
+	background-color: rgba(36,36,36, .9);
+	padding: 20px 8.33%;
+}
+
+.on-sale a {
+	padding: 20px 15%;
+}
+
+.special-offers a {
+	left: 6%;
+    right: 6%;
+}
+
+.range-shoes {
+	background-color: #ebe7df;
+	padding: 30px 0 25px;
+}
+
+.title-cont {
+	margin-bottom: 25px;
+}
+
+.title-view {
+	font: 1.78em "Aller Light", sans-serif;
+}
+
+.show-btn {
+	font: 1em "Aller Bold", sans-serif;
+	color: #bcb5a7;
+	padding: 10px 20px;
+	border: 1px solid #bcb5a7;
+}
+
+.catalog .product {
+	width: 31.25%;
+	height: 270px;
+	display: inline-block;
+	position: relative;
+	margin-right: 25px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.catalog .product:last-child {
+	margin-right: 0;
+}
+
+.thumb {
+	display: block;
+	text-align: center;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+
+.thumb img {
+	height: 220px;
+}
+
+.catalog .price {
+	position: absolute;
+	left: 3.33%;
+	bottom: 0;
+}
+
+.desc {
+	display: inline-block;
+	font-size: 1.42em;
+	font-family: "Aller Light",sans-serif;
+	padding-left: 30%;
+	line-height: 2;
+}
+
+.product .action-menu {
+	opacity: 0;
+	position: absolute;
+	bottom: 2px;
+	left: 35%;
+	transition: all .25s;
+}
+
+.product:hover .desc {
+	opacity: 0;
+}
+
+.product:hover .action-menu {
+	opacity: 1;
+}
+
+.sale-badge,
+.stock-badge {
+	position: absolute;
+	top: 0;
+	right: 3.33%;
+	background: #242424;
+	color: #fff;
+	text-transform: uppercase;
+	width: 70px;
+	height: 70px;
+	font-size: 0.92em;
+	font-family: "Aller Bold",sans-serif;
+	display: flex;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.stock-badge {
+	background: #f27e4b;
+}
+
+.best-seller {
+	border-bottom: 1px solid #bcb5a7;
+	padding-bottom: 25px;
+}
+
+.addon {
+	background-color: #ebe7df;
+	padding: 0 0 25px;
+}
+
+.addon-item {
+	display: inline-block;
+	background: #dfdbd4;
+	padding: 30px 15px;
+	margin-right: 1.5%;
+	height: 185px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.addon-item.sm {
+	margin-right: 0;
+}
+
+.xs {
+	width: 23%;
+}
+
+.sm {
+	width: 50%;
+}
+
+.addon-title {
+	font: 1em "Aller Bold",sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+.addon-desc {
+	font-size: 0.85em;
+}
+
+.addon-item span {
+	font-style: italic;
+	font-size: 0.85em;
+}
+
+.date {
+	margin-right: 20px;
+	color: #fff;
+	text-align: center;
+	background: #57c5a0;
+	height: 35px;
+	width: 35px;
+	font: 0.71em "Aller Bold", sans-serif;
+	padding: 5px;
+}
+
+.date span {
+	font-size: 0.92em;
+}
+
+.news_desc h4 {
+	font: 1em "Aller Bold", sans-serif;
+	padding-bottom: 2px;
+}
+
+.news_desc p {
+	font-size: 0.85em;
+	margin-bottom: 15px;
+}
+
+.pre-footer {
+	background-color: #242424;
+	padding: 50px 0 45px;
+	position: relative;
+}
+
+.pre-footer:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #1c1c1c;
+	bottom: 120px;
+}
+
+.widget-wrap {
+	padding: 0 40px 25px;
+}
+
+.widget-box {
+	width: 30%;
+	overflow: hidden;
+	color: #a4a4a4;
+	margin-right: 40px;
+}
+
+.widget-box:last-child {
+	margin-right: 0;
+}
+
+.widget-box h3 {
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+.widget-box p {
+	font-size: 0.85em;
+	font-style: italic;
+	line-height: 1.5;
+}
+
+.comment span {
+	color: #57c5a0;
+}
+
+.w-date {
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
+.widget-box img {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.subscriptions {
+	padding: 40px 40px 0;
+}
+
+.subscriptions form {
+	position: relative;
+	display: inline-block;
+}
+
+.subscriptions input {
+	width: 250px;
+	height: 35px;
+	background-color: #2e2e2e;
+	border: none;
+	padding: 10px 50px 10px 15px;
+	font-size: 0.85em;
+	color: #7d7d7d;
+	font-style: italic;
+}
+
+.btn-send {
+	width: 35px;
+	height: 35px;
+	background: #7d7d7d url(../img/arrow.png) no-repeat 13px 12px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.socials {
+	padding-right: 20px;
+}
+
+.socials .fa {
+	width: 35px;
+	height: 35px;
+	background-color: #2e2e2e;
+	margin-left: 10px;
+	color: #7d7d7d;
+	font-size: 1.42em;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1.7;
+}
+
+.footer {
+	background-color: #2e2e2e;
+	padding: 30px 0;
+	color: #a4a4a4;
+	font-size: 0.85em;
+}
+
+.copy {
+	display: inline-block;
+}
+
+.footer-menu {
+	line-height: 2;
+}
+
+.footer-menu li {
+	display: inline-block;
+}
+
+.footer-menu li a {
+	color: #a4a4a4;
+	padding-right: 5px;
+}
+
+
+

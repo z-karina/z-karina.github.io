@@ -1,0 +1,229 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .toggle_mnu{
+    display: none;
+  }
+  .navbar{
+    display: block;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .toggle_mnu{
+    display: none;
+  }
+  .navbar{
+    display: block;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .toggle_mnu{
+    display: none;
+  }
+  .navbar{
+    display: block;
+  }
+  .section_header .s_descr_wrap .s_descr{
+    margin-top: 40px;
+  }
+  .section_header .s_descr_wrap .s_descr::after{
+    margin-top: -20px;
+  }
+  .service_content p{
+    margin-bottom: 50px;
+    margin-top: 5px;
+  }
+  .s_icon{
+    margin-bottom: 15px;
+  }
+  .service_content h3{
+    margin: 0;
+  }
+  section.clients .clients_logo{
+    margin-bottom: 50px;
+}
+  .main_form p{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+  }
+  section, .main_footer {
+    padding: 50px 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .navbar{
+    display: none;
+  }
+  .toggle_mnu{
+    display: block;
+  }
+  .section_header .s_descr_wrap .s_descr {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  .section_header .s_descr_wrap .s_descr::after {
+    margin-top: -8px;
+  }
+  .works .section_header .s_descr_wrap .s_descr{
+    margin-bottom: 0;
+  }
+  .post_descr h3{
+    padding-left: 0;
+  }
+  section, .main_footer {
+    padding: 50px 20px;
+  }
+  .btn_wrap{
+    text-align: center;
+  }
+  .main_form button{
+    margin-right: 0;
+  }
+  .main_form p{
+    width: 100%;
+    display: block;
+  }
+  .contact_box .contact_icon{
+    margin-right: 10px;
+  }
+  .wrap_post img{
+    margin-bottom: 25px;
+  }
+
+}
+
+@media only screen and (max-width : 520px){
+  .section_header .s_descr_wrap .s_descr{
+    margin-top: 20px;
+    padding: 0 30px 0;
+  }
+  .section_header .s_descr_wrap .s_descr::after{
+    margin-top: -35px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .top_caption .top_text h1{
+    font-size: 35px;
+  }
+  .section_header .s_descr_wrap .s_descr{
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section_header .s_descr_wrap .s_descr::after{
+    margin-top: -35px;
+  }
+  .works .section_header .s_descr_wrap .s_descr::after{
+    margin-top: -10px;
+  }
+  .mix, .c_name, .c_email {
+    width: 100%;
+  }
+  .top_caption, .action{
+    padding-right: 20px;
+  }
+  .wrap_post img{
+    margin-bottom: 25px;
+  }
+  .post_descr h3{
+    margin: 0;
+  }
+.date{
+  margin-right: 15px;
+  }
+  .post_descr .title{
+    position: absolute;
+    top:37px;
+  }
+  section.clients .clients_logo a {
+    margin-right: 25px;
+  }
+  .clients_logo img{
+    padding-bottom: 20px;
+  }
+  .about .section_content p{
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width : 345px) {
+  .section_header .s_descr_wrap .s_descr::after {
+    margin-top: -58px;
+  }
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  .section_header .s_descr_wrap .s_descr{
+    margin-top: 20px;
+  }
+  .section_header .s_descr_wrap .s_descr::after{
+    margin-top: -58px;
+  }
+  .section_header .s_descr_wrap .s_descr{
+    margin-bottom: 50px;
+  }
+  .service_content p {
+    margin-bottom: 35px;
+  }
+  .works .section_header .s_descr_wrap .s_descr::after{
+    margin-top: -10px;
+  }
+  .works .section_header .s_descr_wrap .s_descr {
+    margin-bottom: 0;
+  }
+  .works ul {
+    margin-bottom: 30px;
+}
+  .wrap_post img {
+    padding-bottom: 25px;
+}
+  .date{
+    margin-right: 10px;
+  }
+  .post_descr h3{
+    padding: 0;
+  }
+  .post_descr .title{
+    top: 35px;
+  }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font.css">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function checkParams() {
+			var name = $('#username').val();
+			var email = $('#email').val();
+			var pass1 = $('#password1').val();
+			var pass2 = $('#password2').val();
+
+			if(name.length != 0 && email.length != 0 && pass1.length != 0 && pass2.length != 0) {
+					$('#sign-up2').removeAttr('disabled');
+				} else {
+						$('#sign-up2').attr('disabled', 'disabled');
+					}
+		};
+	</script>
+	<div class="form">
+		<!--====================== FORM-REGISTER ======================-->
+		<form action="#" autocomplete="off" class="form__register">
+			<div class="form__register__wrap">
+				<h3>Реєстрація</h3>
+				<!--=====================================-->
+				<fieldset class="register-group">
+					<input required type="text" name="username" id="username" placeholder=" " minlength="3" onkeyup='checkParams()'>
+					<label for="username">Логін</label>
+				</fieldset>
+				<!--=====================================-->
+				<fieldset class="register-group">
+					<input required type="email" name="email" id="email" placeholder=" " onkeyup='checkParams()'>
+					<label for="email">Email</label>
+				</fieldset>
+				<!--=====================================-->
+				<fieldset class="register-group">
+					<input required type="password" name="password1" id="password1" placeholder=" " maxlength="100" minlength="8" onkeyup='checkParams()'>
+					<label for="password1">Пароль</label>
+				</fieldset>
+				<!--=====================================-->
+				<fieldset class="register-group">
+					<input required type="password" name="password2" id="password2" placeholder=" " maxlength="100" minlength="8" onkeyup='checkParams()'>
+					<label for="password2">Повторіть пароль</label>
+				</fieldset>
+				<!--=====================================-->
+			</div>
+			<button id="sign-up2" class="form__register__sign-up" type="submit" disabled>Зареєструватися</button>
+			<p class="form__register__message">У вас уже є аккаунт?</p>
+			<a href="#" class="form__register__login">Увійти</a>
+		</form>
+		<!--====================== END FORM-REGISTER ======================-->
+
+		<!--====================== FORM-PENDING ===========================-->
+		<div class="form__pending">
+			<button id="sign-up1" class="form__pending__sign-up" type="button">Зареєструватися</button>
+			<p class="form__pending__message">У вас уже є аккаунт?</p>
+			<a href="#" class="form__pending__login">Увійти</a>
+		</div>
+		<!--====================== END FORM-PENDING =======================-->
+
+		<!--====================== FORM-CONFIRMATION ======================-->
+		<div class="form__confirmation">
+			<button class="form__confirmation__tick"><img src="img/ok.svg"></button>
+			<p class="form__confirmation__message-report">На вашу пошту було надіслано лист. Перейдіть за посиланням для активації аккаунту</p>
+		</div>
+		<!--====================== END FORM-CONFIRMATION ==================-->
+	</div>
+
+	<script src="libs/jquery-2.1.3.min.js"></script>
+	<script src="libs/common.js"></script>
+</body>
+</html>

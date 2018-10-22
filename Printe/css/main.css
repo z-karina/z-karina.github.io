@@ -1,0 +1,265 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* ======= SECTION PRODUCTS ====== */
+section {
+	padding-top: 30px;
+}
+
+h2 {
+	font: 36px/42px "ClearSans", sans-serif;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.product__item {
+	display: flex;
+	margin-top: 30px;
+	padding: 30px 30px 25px 30px;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.05);
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.05);
+	border: 1px solid #DCE1E6;
+}
+
+h4 {
+	font: 16px/19px "ClearSans-Bold", sans-serif;
+	margin-bottom: 25px;
+}
+
+.product__description {
+	margin-left: 30px;
+}
+
+.list-point {
+	font: 14px/16px "ClearSans", sans-serif;
+	margin-bottom: 25px;
+}
+
+.list-point:last-child {
+	margin-bottom: 0;
+}
+
+.product__advertising-list {
+	float: left;
+}
+
+.product__advertising-secondary-list {
+	float: right;
+}
+/* ===== END SECTION PRODUCTS ===== */
+
+.about-us {
+	border-bottom: 1px solid #E8EDF2;
+}
+
+.about-us__text {
+	font: 14px/16px "ClearSans", sans-serif;
+	margin: 35px 0;
+}
+
+.news {
+	text-align: center;
+}
+
+.news__item {
+	margin-top: 65px;
+	padding: 30px 15px;
+	text-align: center;
+}
+
+.news__item:hover,
+.news .active {
+	-webkit-box-shadow: -1px 14px 24px 0px rgba(0,0,0,0.05);
+	-moz-box-shadow: -1px 14px 24px 0px rgba(0,0,0,0.05);
+	box-shadow: -1px 14px 24px 0px rgba(0,0,0,0.05);
+	border-top: 1px solid #1AB0CE;
+}
+
+.news__item:hover .date__news-description,
+.news .active .date__news-description {
+	color: #1AB0CE;
+	text-decoration: underline;
+}
+
+.date {
+	margin-bottom: 10px;
+}
+
+.date__time {
+	font: 14px/16px "ClearSans", sans-serif;
+	color: #BEC7D1;
+}
+
+.date__news-description {
+	font: 16px/19px "ClearSans", sans-serif;
+	color: #3A4047;
+}
+
+.all-news {
+	font: 14px/16px "ClearSans", sans-serif;
+	color: #1AB0CE;
+	border: 1px solid #1AB0CE;
+	outline: 0;
+	border-radius: 2px;
+	background-color: transparent;
+	padding: 7px 23px;
+	margin: 80px 0 50px;
+}
+
+.all-news:hover {
+	background-color: #1AB0CE;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.footer {
+	position: relative;
+	background-color: #F7F7F7;
+	padding: 20px 0 25px;
+}
+
+.license {
+	margin-top: 25px;
+	font: 14px/16px "ClearSans", sans-serif;
+}
+
+.footer .info {
+	text-align: left;
+	margin-top: 5px;
+}
+
+.footer .info__tagline {
+	font:14px/21px "Roboto", sans-serif;
+}
+
+.footer .info__schedule {
+	font: 14px/16px "ClearSans", sans-serif;
+}
+
+.footer-menu__main,
+.footer-menu-secondary {
+	width: 50%;
+	float: left;
+	margin-top: 5px;
+}
+
+.footer-menu-secondary {
+	padding-left: 45px;
+}
+
+.footer-menu__main li,
+.footer-menu-secondary li {
+	margin-bottom: 15px;
+}
+
+.f-menu__link {
+	color: #3A4047;
+	font:14px/21px "Roboto", sans-serif;
+	text-decoration: underline;
+}
+
+.f-menu__link:hover {
+	color: #1AB0CE;
+	text-decoration: underline;
+}
+
+.footer .communications {
+	text-align: right;
+}
+
+.footer .wrap-relations {
+	margin: 5px 0 0 0;
+}
+
+.footer .social__link {
+	left: 75px;
+}
+
+.footer .phones-number {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.footer .dropdown-arrow:after {
+	background-color: #fff;
+	bottom: -20px;
+	transform: rotate(180deg);
+}
+
+.footer .drop__wrapper {
+	left: 80px;
+	top: -190px;
+}
+
+.footer .drop__menu:after {
+	top: 167px;
+	bottom: -20px;
+	border-color: #fff transparent transparent transparent;
+}
+
+.footer .vodafone-icon,
+.footer .kyivstar-icon,
+.footer .lifecell-icon {
+	left: -20px;
+}
+
+.link-developers {
+	display: block;
+	margin-top: 30px;
+}
+
+#go-top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 10px;
+  right: 10px;
+  cursor:pointer;
+  display:none;
+  z-index: 100;
+  opacity: 0.3;
+  background: url(../img/icon_top.png) no-repeat;
+}
+
+

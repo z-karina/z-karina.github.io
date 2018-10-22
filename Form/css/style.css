@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font: 14px "Segoe", sans-serif;
+	background-color: #F2F2F2;
+	color: #BDBDBD;
+}
+
+/* ========== Form-check-in ========== */
+.form {
+	max-width: 320px;
+	height: 600px;
+	background-color: #fff;
+	margin: 5% auto 0;
+	padding: 32px 20px 25px;
+}
+/* ========== End Form-check-in ====== */
+
+/* ========== Form-register ========== */
+.form__register__wrap {
+	padding: 0 10px 49px;
+}
+
+h3 {
+	font: 18px/21px "Segoe-Bold", sans-serif;
+	color: #333333;
+	text-align: left;
+	position: relative;
+	margin-bottom: 86px;
+}
+
+h3:after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 2px;
+	left: 2px;
+	bottom: -5px;
+	background-color: #4A90E2;
+}
+
+.register-group {
+	position: relative;
+	margin-bottom: 42px;
+	border: 0;
+	padding: 0;
+}
+
+.register-group:last-child {
+	margin-bottom: 0;
+}
+
+.register-group input {
+	display: block;
+	width: 100%;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 19px;
+	font-family: "Segoe", sans-serif;
+	color: #112A48;
+	outline: 0;
+	border: 0;
+	border-bottom: 1px solid #4A90E2;
+	padding: 5px 10px;
+	background: none;
+	transition: all 0.2s ease;
+}
+
+.register-group label {
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: .6px;
+	position: absolute;
+	left: 10px;
+	bottom: -18px;
+	transform: translateY(-25px);
+	transition: all 0.2s ease;
+}
+
+input:focus {
+	outline: 0;
+	border: 0;
+	border-bottom: 2px solid #4A90E2;
+}
+
+input:focus + label,
+input:valid + label {
+	transform: translateY(-50px);
+	font-size: 12px;
+	outline: 0;
+	bottom: -13px;
+}
+
+input:focus + label {
+	color: #4A90E2;
+}
+
+input[type="password"] {
+	letter-spacing: 10px;
+}
+
+input:valid:not(:placeholder-shown) {
+	background: url(../img/tick.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	transition: all 0.2s ease;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-bottom: 1px solid #FF3939;
+	background: url(../img/close.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	transition: all 0.2s ease;
+	color: #FF3939;
+}
+
+.form__pending__sign-up,
+.form__register__sign-up {
+	width: 100%;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	margin: 0 auto 38px;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 20px;
+	background-color: #BDBDBD;
+	transition: all 0.3 ease;
+}
+
+.form__pending__sign-up:visited {
+	background-color: #4A90E2;
+}
+
+.form__pending__sign-up:hover,
+.form__pending__sign-up:focus,
+.form__register__sign-up:focus {
+	background-color: #417DC4;
+	outline: 0;
+}
+
+.form__pending__sign-up:active {
+	background-color: #4A90E2;
+}
+
+.form__register__sign-up:valid {
+	background-color: #4A90E2;
+}
+
+.form__register__login,
+.form__pending__login {
+	color: #112A48;
+	font-weight: 600;
+	line-height: 16px;
+	text-align: center;
+	display: block;
+}
+
+.form__register__login:hover,
+.form__register__login:focus,
+.form__pending__login:hover,
+.form__pending__login:focus {
+	color: #4A90E2;
+}
+
+.form__register__login:active {
+	color: #112A48;
+}
+
+.form__register__message,
+.form__pending__message {
+	text-align: center;
+	padding-bottom: 6px;
+	font-weight: 500;
+}
+
+.form__register,
+.form__confirmation {
+	display: none;
+}
+/* ========== End Form-register ========== */
+
+/* ========== Form-pending =============== */
+.form__pending {
+	margin-top: 200px;
+}
+/* ========== End Form-pending =========== */
+
+/* ========== Form-confirmation ========== */
+.form__confirmation {
+	text-align: center;
+}
+
+.form__confirmation__tick {
+	border: none;
+	background: transparent;
+	padding: 0;
+	margin: 130px auto 41px;
+	outline: 0;
+	cursor: pointer;
+}
+
+.form__confirmation__message-report {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 21px;
+	color: #112A48;
+	text-align: center;
+}
+/* ========== End Form-confirmation ========== */

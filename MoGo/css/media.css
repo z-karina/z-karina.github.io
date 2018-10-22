@@ -1,0 +1,377 @@
+@media (max-width: 1199px) {
+
+	.facts {
+		height: 25vh;
+	}
+
+	.statistics li {
+		padding: 0 2em;
+	}
+
+	.wrap-work {
+		margin-top: 5vh;
+	}
+
+	blockquote {
+		font-size: 1.3em;
+	}
+
+	.form-btn {
+		margin-left: 0;
+		margin-top: 1em;
+	}
+
+	.footer-bottom {
+		margin-top: 3em;
+	}
+}
+
+@media (max-width: 991px) {
+
+	body {
+		font-size: 0.7em;
+	}
+
+	.btn {
+		margin-top: -7em;
+	}
+
+	section {
+		padding: 5vh 0;
+	}
+
+	.facts {
+		height: 20vh;
+	}
+
+	h2:after {
+		top: 50px;
+	}
+
+	.services-second-wrap {
+		padding-top: 5vh;
+	}
+
+	.service-title::before {
+		left: -40px;
+		top: -12px;
+	}
+
+	.service-title::after {
+		right: -30px;
+	}
+
+	.service-content {
+		padding-right: 4em;
+	}
+
+	.our-team {
+		padding: 5vh 0 0;
+	}
+
+	.wrap-logos img {
+		width: 15%;
+		margin: 1em 9%;
+	}
+
+	.wrap-items {
+		margin-top: 5vh;
+	}
+
+	.work-item:nth-child(3) {
+		display: none;
+	}
+
+	.work-cont h3::before {
+		top: -35px;
+	}
+
+	.comment {
+		padding: 3em 0;
+	}
+
+	.review {
+		margin-left: 3em;
+	}
+
+	.wrap-team {
+		margin: 3vh auto 4vh;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.team-member {
+		width: 50%;
+		margin: 2em 0 0;
+	}
+
+	.member-socials .fa {
+		line-height: 2.7;
+	}
+
+	.testimonial {
+		padding: 5vh 0;
+	}
+
+	.review h4 {
+		padding-left: 4em;
+	}
+
+	.comment-item img,
+	.testimonial img {
+		width: 15%;
+	}
+
+	.wrap-blog {
+		margin-top: 3vh;
+	}
+
+	.map {
+		padding: 10vh 0;
+	}
+
+	.wrap-footer {
+		padding-top: 3vh;
+	}
+
+	.f-contact {
+		width: 100%;
+	}
+
+	.f-logo {
+		margin-bottom: 1em;
+	}
+
+	.followers {
+		margin-top: 2em;
+	}
+
+	.f-social {
+		padding: 1em 0;
+	}
+
+	form input {
+		width: 70%;
+	}
+
+	.form-btn {
+		width: 30%;
+		 margin-left: -3px;
+		 vertical-align: bottom;
+	 }
+
+	.f-blogs,
+	.f-instagram {
+		width: 50%;
+	}
+
+	.f-blog-item {
+		margin-right: 3em;
+	}
+
+	.f-title {
+		text-align: left;
+	}
+
+	.wrap-blog {
+		flex-direction: column;
+	}
+
+	.blog-item {
+		width: 90%;
+		margin: 0 auto 3em;
+		max-width: 300px;
+	}
+
+	.blog-item:last-child {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 749px) {
+
+	.visible-lg,
+	.wrap-inst img:nth-child(n+5) {
+		display: none;
+	}
+
+	.menu-link {
+		display: block;
+	}
+
+	.wrap-items {
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.about-items {
+		width: 70%;
+		margin: 0 auto 2em;
+	}
+
+	.services {
+		flex-direction: column;
+		align-content: center;
+		padding-top: 2em;
+	}
+
+	.service-item {
+		width: 45%;
+		margin: 0 auto 2em;
+	}
+
+	.service-item h3 {
+		text-align: center;
+	}
+
+	.line {
+		padding-bottom: 0;
+	}
+
+	.services-second-wrap {
+		flex-direction: column;
+		align-content: center;
+		padding-top: 5vh;
+	}
+
+	.service-picture {
+		width: 100%;
+		margin-bottom: 3em;
+	}
+
+	.service-picture img,
+	.service-descr {
+		width: 100%;
+	}
+
+	.comment-item,
+	.testimonial-item {
+		flex-direction: column;
+	}
+
+	.comment-item img,
+	.testimonial-item img {
+		padding-bottom: 2em;
+	}
+
+	.review,
+	.testimonial .review {
+		width: 70%;
+		margin-left: 0;
+	}
+
+	.blog-text h4,
+	.blog-footer {
+		text-align: center;
+	}
+
+	.blog-item:last-child {
+		margin: 0 auto;
+	}
+
+	.map .fa {
+		top: -5px;
+	}
+
+	.footer-bottom {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 649px) {
+
+	.main-text span {
+		font-size: 3.5em;
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+
+	.btn {
+		margin-top: -11em;
+	}
+
+	.slider-item {
+		display: none;
+	}
+
+	.facts,
+	.testimonial {
+		display: none;
+	}
+
+	.service-one {
+		padding-top: 0;
+	}
+
+	.section-pictures img {
+		max-height: 250px;
+	}
+
+	.team-member {
+		width: 60%;
+	}
+
+	.member-socials .fa {
+		width: 40px;
+		height: 40px;
+		font-size: 1.3em;
+	}
+
+	.wrap-logos {
+		justify-content: center;
+	}
+
+	.wrap-logos img {
+		width: 25%;
+	}
+
+	.work-item:nth-child(4) {
+		display: none;
+	}
+
+	.wrap-reviews {
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.review-item {
+		width: 80%;
+	}
+
+	.review-item:nth-child(-n+2),
+	.review-item {
+		margin: 0 auto 2em;
+	}
+}
+
+@media (max-width: 480px) {
+
+	h1 {
+		font-size: 34px;
+		letter-spacing: 3px;
+	}
+
+	.btn {
+		margin-top: -15em;
+	}
+
+	h2 {
+		font-size: 1.7em;
+		margin: 0 0 30px;
+		letter-spacing: 3px;
+	}
+
+	h2::after {
+		top: 35px;
+	}
+
+	.team-member {
+		width: 80%;
+	}
+
+	.f-blogs, .f-instagram {
+		width: 100%;
+	}
+}

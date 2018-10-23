@@ -353,11 +353,11 @@ h2:after {
 }
 
 .about-items {
-    width: 32%;
+    width: 31%;
 }
 
 .about-items img {
-    height: 100%;
+    width: 100%;
 }
 
 .lower-item {

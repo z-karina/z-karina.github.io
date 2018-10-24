@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(../bootstrap/css/bootstrap.min.css);
+@import url(../css/font-awesome.min.css);
+@import url(../css/media.min.css);
+@import url(../css/animate.min.css);
 
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;

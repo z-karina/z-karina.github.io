@@ -62,8 +62,8 @@
 		 * Contact form
 		/* ---------------------------------------------- */
 
-		$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+			$("input,select,textarea").jqBootstrapValidation();
 
 	});
 
-});
+})(jQuery);
